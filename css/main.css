@@ -1,0 +1,171 @@
+/****** Base Styles ******/
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+}
+
+/****** Grid ******/
+
+.content-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.full-width {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: row wrap;
+  margin: 0 auto;
+}
+.half-big {
+  width: 50%;
+}
+.half-width {
+  width: 50%;
+}
+.third-width {
+  width: 33.3%;
+}
+.big {
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: row wrap;
+  margin: 0 auto;
+  color: white;
+}
+.box {
+  width: 50%;
+  height: 450px;
+  color: white;
+}
+.sides {
+  width: 37.5%;
+  padding: 0 50px;
+  box-sizing: border-box;
+}
+.middle {
+  width: 25%;
+  padding: 0 25px;
+  box-sizing: border-box;
+}
+
+/****** Header ******/
+
+header {
+  font-size: 30px;
+}
+header p {
+  padding: 0;
+}
+.hero {
+  margin: 0 auto;
+  height: 666px;
+  background-image: url("../img/chess-hero.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  clear: both;
+}
+.navi {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding-top: 25px;
+}
+nav li {
+  display: inline-block;
+  float: right;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    margin-right: 45px;
+}
+
+
+/****** Body ******/
+
+body {
+  background-color: #29212e;
+}
+p {
+  color: white;
+  font-size: 21px;
+}
+h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 48px;
+  color: white;
+}
+h3 {
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+  color: #ffd61f;
+  font-size: 36px;
+  padding-bottom: 50px;
+}
+h4 {
+  color: white;
+  font-size: 24px;
+}
+span {
+  font-family: 'Wallpoet', cursive;
+  color: #ffd61f;
+  font-size: 55px;
+}
+h5 {
+  color: white;
+  font-size: 24px;
+}
+.mid {
+  text-align: right;
+  padding-right: 50px;
+}
+.right {
+  padding-left: 50px;
+}
+.about h3 {
+  height: 22px;
+}
+.about p {
+  color: black;
+  font-size: 20px;
+}
+.about {
+  margin: 0 auto;
+  width: 1400px;
+  height: 525px;
+  background-image: url("../img/anti-hero.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  clear: both;
+}
+#contact {
+  text-align: center;
+}
+.pad {
+  width: 100px;
+  float: left;
+}
+#work {
+  overflow: auto;
+}
+
+/*********** TABLETS *************/
+
+@media only screen and (min-width: 768px) {
+
+}
+
+/************** DESKTOP *****************/
+
+@media only screen and (min-width: 1200px) {
+
+}
