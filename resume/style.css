@@ -1,0 +1,17 @@
+div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img {
+    width: 100%;
+}
+section {
+ display: flex;
+ justify-content: center;
+ margin-top: 20px;
+}
+a {
+    text-decoration: none;
+}
