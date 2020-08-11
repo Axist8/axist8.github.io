@@ -168,6 +168,9 @@ h5 {
   font-size: 1.4em;
   text-align: center;
 }
+.after-half {
+  width: 75%;
+}
 .about h3 {
   height: 35px;
   padding-top: 70px;
