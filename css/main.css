@@ -195,6 +195,10 @@ h5 {
 #contact h3 {
   padding-top: 50px;
 }
+.sub a {
+  font-size: .8em;
+  color: aliceblue;
+}
 
 /*********** TABLETS *************/
 
