@@ -73,6 +73,7 @@ header,
 }
 .box {
   width: 100%;
+  margin-bottom: 60px;
 }
 #contact {
   display: flex;
@@ -108,6 +109,81 @@ header,
   align-items: center;
 }
 
+/******* Special ********/
+
+.gitbut {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button {
+	cursor: pointer;
+  position: relative;
+  color: #f5edfa;
+  transition: color .5s;
+	padding: 5px 20px;
+	border-radius: 3.75rem;
+	font-size: 1.1em;
+	font-weight: 600;
+	
+	border: 1px solid black;
+	background-image: linear-gradient(-180deg, rgb(104, 100, 68) 0%, rgb(48, 41, 8));
+	box-shadow: 0 1rem 1.25rem 0 rgb(17, 17, 11),
+							0 -0.25rem 1.5rem rgb(129, 133, 86) inset,
+							0 0.75rem 0.5rem rgba(255,255,255, 0.4) inset,
+							0 0.25rem 0.5rem 0 rgb(163, 146, 58) inset;
+}
+
+button::before {
+	content: "";
+	display: block;
+	height: 0.25rem;
+	position: absolute;
+	top: 0.5rem;
+	left: 50%;
+	transform: translateX(-50%);
+	width: calc(100% - 7.5rem);
+	background: #fff;
+	border-radius: 100%;
+	
+	opacity: 0.7;
+	background-image: linear-gradient(-270deg, rgba(255,255,255,0.00) 0%, #FFFFFF 20%, #FFFFFF 80%, rgba(255,255,255,0.00) 100%);
+}
+
+button::after {
+	content: "";
+	display: block;
+	height: 0.25rem;
+	position: absolute;
+	bottom: 0.75rem;
+	left: 50%;
+	transform: translateX(-50%);
+	width: calc(100% - 7.5rem);
+	background: #fff;
+	border-radius: 100%;
+	
+	filter: blur(1px);
+	opacity: 0.05;
+	background-image: linear-gradient(-270deg, rgba(255,255,255,0.00) 0%, #FFFFFF 20%, #FFFFFF 80%, rgba(255,255,255,0.00) 100%);
+}
+button:active {
+  background-image: linear-gradient(-180deg, rgb(48, 41, 8) 0%, rgb(104, 100, 68));
+}
+.sub a {
+  font-size: 0.9em;
+  color: aliceblue;
+  transition: color 1s;
+  text-decoration: none;
+}
+button:hover {
+  color: #dfb0ff;
+  text-shadow: none;
+}
+a:active {
+
+}
+
   
   /****** Header ******/
 
@@ -132,8 +208,18 @@ nav ul {
 nav ul li a {
   text-decoration: none;
   color: white;
+  transition: color 1s;
   margin-right: 28px;
   font-size: 1.9em;
+  transition: font-size 1s;
+}
+nav ul li a:hover {
+  color: rgb(247, 235, 170);
+  text-shadow: -2px 2px 0 #000,
+  2px 2px 0 #000,
+  2px -2px 0 #000,
+  -2px -2px 0 #000;
+  font-size: 2em;
 }
 .hero {
   width: 100%;
@@ -149,6 +235,11 @@ img {
 figure {
         margin: 0;
 }
+figure img:hover {
+  border: black solid 2px;
+  width: 99%;
+  height: 99%;
+}
 
 /****** Body ******/
   
@@ -162,22 +253,34 @@ h1 {
   font-family: 'Orbitron', sans-serif;
   font-size: 2.4em;
   color: white;
+  text-shadow: -2px 2px 0 #000,
+				        2px 2px 0 #000,
+				        2px -2px 0 #000,
+				        -2px -2px 0 #000;
 }
 h3 {
   font-family: 'Orbitron', sans-serif;
   text-align: center;
-  color: #ffd61f;
+  color: hsla(50, 90%, 70%, 1);
+  text-shadow: -2px 2px 0 #000,
+				        2px 2px 0 #000,
+				        2px -2px 0 #000,
+				        -2px -2px 0 #000;
   font-size: 3em;
   padding-bottom: 45px;
 }
 h4 {
-  color: white;
+  color: hsla(50, 90%, 85%, 1);
   font-size: 2.3em;
   text-align: center;
+  text-shadow: -1px 1px 0 black,
+				        1px 1px 0 black,
+				        1px -1px 0 black,
+				        -1px -1px 0 black;
 }
 span {
   font-family: 'Wallpoet', cursive;
-  color: #ffd61f;
+  color: hsla(50, 60%, 70%, 1);
   font-size: 1.2em;
 }
 h5 {
@@ -197,9 +300,18 @@ h5 {
 .about p {
   color: black;
   font-size: 1.2em;
+  font-weight: 600;
+}
+.about-me {
+  color: hsla(277, 70%, 32%, 1);
+  text-shadow: -1px 1px 0 white,
+				        1px 1px 0 white,
+				        1px -1px 0 white,
+				        -1px -1px 0 white;
 }
 #about {
   height: 525px;
+  background-color: white;
   background-image: url("../img/anti-hero.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -214,10 +326,7 @@ h5 {
 #contact h3 {
   padding-top: 50px;
 }
-.sub a {
-  font-size: 1em;
-  color: aliceblue;
-}
+
 
 
 /*********** TABLETS *************/
@@ -253,6 +362,7 @@ nav ul {
 .box {
   width: 45%;
   margin: 2.5%;
+  margin-bottom: 20px;
 }
 .half-width {
   width: 65%;
